@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Codystar:wght@300;400&family=VT323&family=Vast+Shadow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('weather.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.title {
+    text-align: center;
+    margin: 40px;
+}
+
+.title h2 {
+    font-family: 'Codystar';
+}
+
+.title p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: 'Vast Shadow';
+    text-transform: uppercase;
+}
+
+.title h4 {
+    font-family: 'Black Ops One';
+}
+
+.input {
+    text-align: center;
+    margin: 50px 0;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 600px;
+    background-color: #e7e7e7;
+    font-family: sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 10px;
+}
+
+input[type="submit"] {
+    height: 50px;
+    width: 100px;
+    background-color: rgba(255, 170, 255, 0.836);
+    color: rgb(65, 65, 65);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    color: black;
+}
+
+.display-city {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.display-info {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'VT323';
+    line-height: 30px;
+}
+
+.city {
+    font-family: 'Black Ops One';
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 600px) {
+    input[type="text"] {
+        height: 40px;
+        width: 300px;
+        font-size: 15px;
+    }
+
+    input[type="submit"] {
+        height: 40px;
+        width: 60px;
+        font-size: 15px;
+    }
+
+    .card {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
